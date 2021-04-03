@@ -192,7 +192,11 @@ h2 {
   font-size: 35px;
   text-align: start;
   margin-right: 200px;
-  /* margin-left: 50px;
-  margin-right: 1220px;
-  text-align: end; */
+}
+
+footer {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  margin-bottom: 50px;
 }
