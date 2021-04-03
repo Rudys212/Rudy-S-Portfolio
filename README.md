@@ -27,17 +27,25 @@
 ---
 
 - Header with navigations bar and about me section with current picture
-  ![Webpage Header and About Me](Assets/Images/nav-bar-about-me.jpg)
+
+  ![Webpage Header and About Me](assets/Images/nav-bar-about-me.jpg)
+
 - "My Work" section with bigger image
-  ![My Work section with bigger image](Assets/Images/myworkbigimg.jpg)
+
+  ![My Work section with bigger image](assets/Images/myworkbigimg.jpg)
+
 - "My Work" section with smaller images
-  ![Smaller images of my work](Assets/Images/myworksmallimgs.jpg)
+
+  ![Smaller images of my work](assets/Images/myworksmallimgs.jpg)
+
 - Contact me section
-  ![Contact me hyperlinks](Assets/Images/contactme.jpg)
+
+  ![Contact me hyperlinks](assets/Images/contactme.jpg)
 
 ## Submission
 
 ---
 
 [GitHub Repo URL](https://github.com/Rudys212/Rudy-S-Portfolio)
+
 [Deployed URL](https://rudys212.github.io/Rudy-S-Portfolio/)
