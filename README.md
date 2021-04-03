@@ -33,7 +33,7 @@
 - "My Work" section with smaller images
   ![Smaller images of my work](Assets/Images/myworksmallimgs.jpg)
 - Contact me section
-  ![Contact me hyperlinks](Assets/Images/contactme.jpg
+  ![Contact me hyperlinks](Assets/Images/contactme.jpg)
 
 ## Submission
 
