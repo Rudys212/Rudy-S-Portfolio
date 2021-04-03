@@ -27,13 +27,13 @@
 ---
 
 - Header with navigations bar and about me section with current picture
-  ![Webpage Header and About Me](../Assets/Images/nav-bar-about-me.png)
+  ![Webpage Header and About Me](Assets/Images/nav-bar-about-me.jpg)
 - "My Work" section with bigger image
-  ![My Work section with bigger image](../Assets/Images/myworkbigimg.png)
+  ![My Work section with bigger image](Assets/Images/myworkbigimg.jpg)
 - "My Work" section with smaller images
-  ![Smaller images of my work](../Assets/Images/myworksmallimgs.png)
+  ![Smaller images of my work](Assets/Images/myworksmallimgs.jpg)
 - Contact me section
-  ![Contact me hyperlinks](../Assets/Images/contactme.png)
+  ![Contact me hyperlinks](Assets/Images/contactme.jpg
 
 ## Submission
 
