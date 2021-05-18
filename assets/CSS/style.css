@@ -70,6 +70,16 @@ h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
 }
+
+.app-title-big a {
+  position: absolute;
+  background-color: #32a860;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  bottom: -650px;
+  left: 300px;
+  width: 150px;
+}
 /* About Me Styling */
 
 .headshot {
