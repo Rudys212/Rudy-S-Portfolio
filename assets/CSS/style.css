@@ -5,6 +5,7 @@
   margin: 0;
   color: black;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Body styling*/
@@ -14,15 +15,15 @@ body {
 
 header {
   padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: #32a860;
 }
 
 header .myName {
-  color: #32a860;
   text-decoration: none;
-  background-color: #000000;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: none;
+  font-size: 28px;
 }
 
 header h1 {
@@ -31,54 +32,51 @@ header h1 {
 
 header nav {
   float: right;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 23px;
   display: inline-block;
 }
 
 header li:hover {
-  background-color: #ffffff;
-  color: #000000;
+  /* background-color: #ffffff1e; */
+  transform: translateY(0) scale(1.3);
 }
 header li {
-  text-decoration: underline;
   display: inline-block;
   padding: 8px 10px;
 }
 
 /*Hero image*/
 .hero-image {
-  height: 230px;
+  height: 290px;
   width: 100%;
   margin-bottom: 25px;
+  max-width: 100%;
+  bottom: 100px;
+  position: relative;
 }
 .hero-text {
   text-align: right;
   font-size: 30px;
-  text-shadow: 2px 2px #32a860;
+  text-shadow: 2px 2px #56d8a6;
 }
-.hero-text h2 {
+.hero-text h1 {
   padding: 10px 50px;
   position: absolute;
   border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   right: 10px;
   top: 200px;
-}
-h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  color: #32a860;
 }
 
 .app-title-big a {
-  position: absolute;
+  /* position: absolute; */
   background-color: #32a860;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  bottom: -650px;
+  font-family: "Space Grotesk", sans-serif;
+  /* bottom: -650px;
   left: 300px;
-  width: 150px;
+  width: 150px; */
 }
 /* About Me Styling */
 
@@ -96,8 +94,7 @@ h2 {
 }
 #aboutme {
   font-size: 18px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  font-family: "Roboto", sans-serif;
   text-align: justify;
   border-left: #32a860 solid;
   margin-right: 80px;
@@ -107,8 +104,7 @@ h2 {
 }
 
 #aboutmetitle {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  font-family: "Space Grotesk", sans-serif;
   padding-right: 10px;
   font-size: 35px;
   margin-left: -430px;
@@ -117,8 +113,7 @@ h2 {
 /*Styling for images of my work*/
 
 #myworktitle {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  font-family: "Space Grotesk", sans-serif;
   padding-right: 10px;
   font-size: 35px;
   margin-left: 130px;
@@ -131,7 +126,7 @@ h2 {
   margin-right: 130px;
 }
 
-.flex-container {
+.workCardSec {
   border-left: #32a860 solid;
   display: inline-flex;
   flex-direction: row;
@@ -140,7 +135,7 @@ h2 {
   margin: auto;
   margin-right: 50px;
 }
-.flex-container .bigimg {
+/* .workCardSec .bigCardCont {
   height: 750px;
   width: 550px;
   display: block;
@@ -148,30 +143,29 @@ h2 {
   margin-right: auto;
   padding: 20px;
   position: relative;
-}
-.flex-container img {
+} */
+/* .workCardSec img {
   height: 250px;
   width: 450px;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   position: relative;
-}
-.app-title {
-  position: relative;
+  max-width: 100%;
+  height: auto;
+} */
+
+.cardTitles {
   background-color: #32a860;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  bottom: 90px;
-  left: 30px;
+  font-family: "Space Grotesk", sans-serif;
   width: 150px;
 }
 
 /* Hover styling on images */
-.flex-container .bigimg:hover {
+.workCardSec .bigimg:hover {
   opacity: 0.6;
 }
-.flex-container img:hover {
+.workCardSec img:hover {
   opacity: 0.6;
 }
 
@@ -189,7 +183,9 @@ h2 {
   margin-left: 182px;
   margin-bottom: 80px;
 }
-
+header {
+  padding: 0;
+}
 .mylinks a {
   margin-right: 10px;
   padding-right: 20px;
@@ -198,8 +194,7 @@ h2 {
   text-decoration: none;
 }
 #contact-me-title {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 35px;
   text-align: start;
   margin-right: 200px;
@@ -207,7 +202,55 @@ h2 {
 
 footer {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-sroif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 50px;
+}
+
+/* .cardImagesTop {
+  margin-bottom: 0.75rem;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardImagesBttm {
+  margin-bottom: 0.75rem;
+  display: block;
+  width: 80%;
+  height: auto;
+  /* margin-left: auto;
+  margin-right: auto;
+/* } */
+/* .allCards { */
+/* float: left; */
+/* width: 580px;
+  height: auto;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+} */
+
+.bigCardImg {
+  max-width: 100%;
+  height: auto;
+  height: 670px;
+  width: 605px;
+}
+
+.bigCardCont {
+  border: none;
+}
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 1, 1, 0.07466736694677867) 0%,
+    rgba(0, 0, 0, 0.06346288515406162) 0%
+  );
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
