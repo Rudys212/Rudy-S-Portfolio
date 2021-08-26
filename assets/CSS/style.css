@@ -9,8 +9,9 @@
 
 /*Body styling*/
 body {
-  background-image: url("../Images/whiteBack.jpg");
+  background-image: url("/assets/Images/whiteBack.jpg");
 }
+
 p {
   font-family: "Roboto", sans-serif;
 }
