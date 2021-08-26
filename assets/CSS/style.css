@@ -5,14 +5,15 @@
   margin: 0;
   color: black;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 
 /*Body styling*/
 body {
-  background-color: white;
+  background-image: url("/assets/Images/whiteBack.jpg");
 }
-
+p {
+  font-family: "Roboto", sans-serif;
+}
 header {
   padding: 10px;
   font-family: "Space Grotesk", sans-serif;
@@ -70,22 +71,19 @@ header li {
   color: #32a860;
 }
 
-.app-title-big a {
-  /* position: absolute; */
-  background-color: #32a860;
-  font-family: "Space Grotesk", sans-serif;
-  /* bottom: -650px;
-  left: 300px;
-  width: 150px; */
-}
-/* About Me Styling */
-
 .headshot {
   width: 250px;
   height: 100%;
   margin-left: 302px;
   margin-bottom: 70px;
   margin-top: 0px;
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 50px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px 3px 6px 0px inset;
+  margin-top: 0;
 }
 #aboutmesection {
   display: flex;
@@ -125,7 +123,9 @@ header li {
   margin-left: -60px;
   margin-right: 130px;
 }
-
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
 .workCardSec {
   border-left: #32a860 solid;
   display: inline-flex;
@@ -135,30 +135,33 @@ header li {
   margin: auto;
   margin-right: 50px;
 }
-/* .workCardSec .bigCardCont {
-  height: 750px;
-  width: 550px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  position: relative;
-} */
-/* .workCardSec img {
-  height: 250px;
-  width: 450px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  position: relative;
-  max-width: 100%;
-  height: auto;
-} */
 
 .cardTitles {
   background-color: #32a860;
   font-family: "Space Grotesk", sans-serif;
   width: 150px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.cardTitles:hover {
+  font-family: "Space Grotesk", sans-serif;
+  width: 150px;
+  text-decoration: none;
+  transform: translateY(0) scale(1.3);
 }
 
 /* Hover styling on images */
@@ -170,29 +173,57 @@ header li {
 }
 
 /* Contact me section styling */
-.mylinks {
-  border-left: #32a860 solid;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.mylinks li {
+  font-family: "Space Grotesk", sans-serif;
   text-align: center;
   word-spacing: 20px;
   font-size: 20px;
-  text-decoration: underline;
   padding: 10px;
-  color: #ffffff;
-  margin-left: 182px;
   margin-bottom: 80px;
+  list-style-type: none;
+  display: inline;
+  margin-left: 125px;
 }
+
+.mylinks {
+  border-left: #32a860 solid;
+  margin-left: 182px;
+  color: #000000;
+}
+
 header {
   padding: 0;
 }
-.mylinks a {
+.linkTxt i {
+  color: #000000;
+  font-family: "Space Grotesk", sans-serif;
+  margin-right: 10px;
+  padding-right: 20px;
+  text-decoration: none;
+  margin-left: 52px;
+  margin-bottom: 80px;
+  text-align: center;
+  word-spacing: 20px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.linkTxt a {
+  color: #000000;
+}
+li:hover {
+  transform: translateY(0) scale(1.3);
+}
+.linkTxt i:hover {
+  font-family: "Space Grotesk", sans-serif;
   margin-right: 10px;
   padding-right: 20px;
   padding-left: 20px;
   margin-left: 10px;
   text-decoration: none;
+  transform: translateY(0) scale(1.3);
 }
+
 #contact-me-title {
   font-family: "Space Grotesk", sans-serif;
   font-size: 35px;
@@ -206,41 +237,12 @@ footer {
   margin-bottom: 50px;
 }
 
-/* .cardImagesTop {
-  margin-bottom: 0.75rem;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cardImagesBttm {
-  margin-bottom: 0.75rem;
-  display: block;
-  width: 80%;
-  height: auto;
-  /* margin-left: auto;
-  margin-right: auto;
-/* } */
-/* .allCards { */
-/* float: left; */
-/* width: 580px;
-  height: auto;
-  padding: 0.75rem;
-  margin-bottom: 2rem;
-  border: 0;
-} */
-
-.bigCardImg {
-  max-width: 100%;
-  height: auto;
-  height: 670px;
-  width: 605px;
-}
-
-.bigCardCont {
-  border: none;
+.bigTitle {
+  background-color: #32a860;
+  font-family: "Space Grotesk", sans-serif;
+  width: 150px;
+  position: relative;
+  bottom: 130px;
 }
 
 .navbar {
@@ -249,8 +251,40 @@ footer {
     rgba(0, 1, 1, 0.07466736694677867) 0%,
     rgba(0, 0, 0, 0.06346288515406162) 0%
   );
+  background-size: contain;
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: 1;
+}
+
+.card {
+  background: none;
+  border: none;
+}
+
+.allCards {
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  position: relative;
+  left: 40px;
+  top: 0px;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .element {
+    display: inline-block;
+    width: 100%;
+  }
 }
