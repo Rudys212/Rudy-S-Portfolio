@@ -9,16 +9,11 @@
 
 /*Body styling*/
 body {
-  background-image: url("assets/Images/whiteBack.jpg");
+  background-image: url("../Images/whiteBack.jpg");
 }
 
 p {
   font-family: "Roboto", sans-serif;
-}
-header {
-  padding: 10px;
-  font-family: "Space Grotesk", sans-serif;
-  background-color: #32a860;
 }
 
 header .myName {
@@ -33,7 +28,6 @@ header h1 {
 }
 
 header nav {
-  float: right;
   font-family: "Space Grotesk", sans-serif;
   font-size: 23px;
   display: inline-block;
@@ -62,44 +56,62 @@ header li {
   font-size: 30px;
   text-shadow: 2px 2px #56d8a6;
 }
-.hero-text h1 {
-  padding: 10px 50px;
-  position: absolute;
-  border-radius: 10px;
+
+h1.heroTitle {
   font-family: "Space Grotesk", sans-serif;
-  right: 10px;
-  top: 200px;
+  display: flex;
+  flex-direction: row;
+  position: inherit;
+  margin-bottom: 30px;
+
+  margin-top: -100px;
   color: #32a860;
+  padding: 10px 50px;
+  position: relative;
+  border-radius: 10px;
+  right: 10px;
 }
 
 .headshot {
+  flex-direction: row;
+  display: flex;
   width: 250px;
-  height: 100%;
+  height: 250px;
   margin-left: 302px;
-  margin-bottom: 70px;
-  margin-top: 0px;
-  position: relative;
   border: none;
   border-radius: 0.25rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 50px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px 3px 6px 0px inset;
   margin-top: 0;
+  padding: 0;
 }
 #aboutmesection {
   display: flex;
   margin-left: -60px;
-  margin-right: 85px;
 }
+p#paraTxtOne {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+#paraTxtTwo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
 #aboutme {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  text-align: justify;
-  border-left: #32a860 solid;
-  margin-right: 80px;
   padding-left: 350px;
-  margin-bottom: 60px;
-  padding-right: 48px;
+  display: flex;
+  flex-direction: column;
+  border-left: #32a860 solid;
 }
 
 #aboutmetitle {
@@ -108,6 +120,8 @@ header li {
   font-size: 35px;
   margin-left: -430px;
   text-align: end;
+  display: flex;
+  flex-direction: row;
 }
 /*Styling for images of my work*/
 
@@ -253,7 +267,7 @@ footer {
     rgba(0, 0, 0, 0.06346288515406162) 0%
   );
   background-size: contain;
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 0px;
   z-index: 1;
@@ -283,9 +297,73 @@ footer {
   z-index: 1;
 }
 
-@media (max-width: 600px) {
-  .element {
-    display: inline-block;
-    width: 100%;
+@media screen (min-width: 576px) and (max-width: 767.98px) and (min-width: 767px) {
+  .navbar {
+    background: linear-gradient(
+      90deg,
+      rgb(101 142 146) 0%,
+      rgb(66 69 76 / 46%) 0%
+    );
+    background-size: contain;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .hero-text h1 {
+    padding: 0px 0px;
+    position: relative;
+    /* border-radius: 10px; */
+    font-family: "Space Grotesk", sans-serif;
+    right: 10px;
+    top: -120px;
+    color: #32a860;
+    bottom: 200px;
+  }
+
+  #aboutmetitle {
+    font-family: "Space Grotesk", sans-serif;
+    /* padding-right: 10px; */
+    font-size: 35px;
+    margin-left: -430px;
+    text-align: end;
+    position: relative;
+    right: 49px;
+    bottom: 100px;
+  }
+  #aboutme {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    border-left: #32a860 solid;
+    margin-right: 100px;
+    padding-left: 350px;
+    margin-bottom: 10px;
+  }
+  .headshot {
+    flex-direction: row;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-left: 302px;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 50px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px 3px 6px 0px inset;
+    margin-top: 0;
+  }
+
+  #aboutmetitle {
+    font-family: "Space Grotesk", sans-serif;
+    /* padding-right: 10px; */
+    font-size: 35px;
+    margin-left: 190px;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    position: relative;
   }
 }
